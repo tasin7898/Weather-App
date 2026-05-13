@@ -1,0 +1,166 @@
+* {
+  border-radius: 0.4rem;
+}
+:root {
+  --font-display: "Righteous", cursive;
+  --font-data: "Inter", sans-serif;
+  --font-label: "Raleway", sans-serif;
+}
+h1 {
+  text-align: center;
+  padding: 0.8rem 0;
+  font-size: 3rem;
+  color: rgba(36, 74, 131, 0.733);
+  font-family: var(--font-display);
+}
+.container {
+  padding: 1rem 2rem;
+}
+.search-weather {
+  display: flex;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+.input-field input {
+  width: 92%;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid gray;
+  font-family: var(--font-display);
+}
+button {
+  padding: 0.5rem 0.7rem;
+  border: none;
+}
+#toggle-unit {
+  background-color: rgb(39, 152, 180);
+  margin: 1rem 0;
+}
+#toggle-unit:hover {
+  background-color: rgb(92, 83, 216);
+}
+.search-weather button {
+  background-color: lightblue;
+}
+.search-weather button:hover {
+  background-color: rgb(108, 73, 189);
+}
+.weather-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.current-weather-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  gap: 1rem;
+  padding: 1.5rem;
+  width: clamp(250px, 70vw, 700px);
+}
+.current-weather-time {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.location-date {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.main-values {
+  grid-column: 1/3;
+  grid-row: 3/7;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.wind-icon {
+  font-size: 3.5rem;
+}
+.temperature {
+  font-size: 3.5rem;
+  font-weight: 600;
+  font-family: var(--font-data);
+}
+.short-description {
+  font-size: 1.5rem;
+}
+.short-description > div:last-child {
+  font-size: 1.1rem;
+}
+.full-description {
+  grid-column: 1/3;
+  grid-row: 7/8;
+  font-size: 1.2rem;
+}
+.other-values {
+  grid-column: 1/3;
+  grid-row: 8/10;
+  display: flex;
+  gap: 1.8rem;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 0.8rem 0;
+  flex-wrap: wrap;
+}
+.label {
+  font-family: var(--font-label);
+}
+.value {
+  font-weight: 550;
+  font-family: var(--font-data);
+}
+.week-forecast {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.day-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  padding: 0.8rem;
+  text-align: center;
+}
+.short-description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.day {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.icons {
+  font-size: 1.2rem;
+}
+.temps {
+  display: flex;
+  gap: 0.8rem;
+  font-family: var(--font-data);
+}
+
+.error .active {
+  padding: 0.1rem 0.8rem 0 0;
+}
