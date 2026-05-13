@@ -1,0 +1,7 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // Prettier extension ID
+  "editor.formatOnSave": true, // format every Ctrl+S
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit" // auto-fix ESLint on save
+  }
+}
