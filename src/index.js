@@ -163,8 +163,8 @@ const renderWeather = (data, unit) => {
             <div class="day label">${extractDay(day.datetime)}</div>
             <div class="icons"><i class="wi ${getIcon(day.icon)}"></i></div>
             <div class="temps">
-              <div class="max-temp">${getTemp(day.tempmax)}°${unit}</div>
-              <div class="min-temp">${getTemp(day.tempmin)}°${unit}</div>
+              <div class="max-temp">${getTemp(day.tempmax, unit)}°${unit}</div>
+              <div class="min-temp">${getTemp(day.tempmin, unit)}°${unit}</div>
             </div>
           </div>
           `
